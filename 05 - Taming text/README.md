@@ -1,5 +1,8 @@
 # 05 - Taming Text
 
+## IMPORTANT NOTE : 
+** The Homework05.html file contains some interactive visualisation for the Topic Modelling results, and those are not displayed in the Homework05.ipynb, please use the .html file for your review :)**
+
 ## Deadline
 Thursday December 15, 2016 at 11:59PM
 
