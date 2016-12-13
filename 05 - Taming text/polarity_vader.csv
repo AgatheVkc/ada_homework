@@ -1,42 +1,42 @@
 ,Polarity,Frequency
-estonia,1.0,3
-guyana,1.0,1
-turkmenistan,1.0,1
-senegal,1.0,2
-myanmar,1.0,2
-kazakhstan,1.0,3
-cyprus,1.0,4
-madagascar,1.0,2
-hong kong,1.0,3
-monaco,1.0,1
-georgia,1.0,7
-mauritania,1.0,1
-tajikistan,1.0,1
-russian federation,1.0,1
-mongolia,1.0,3
-nepal,1.0,1
-western sahara,1.0,1
-greenland,1.0,2
-bahrain,1.0,3
-thailand,1.0,3
-belarus,1.0,1
-slovakia,1.0,2
-new zealand,1.0,3
-antarctica,1.0,1
-mozambique,1.0,1
-kyrgyzstan,1.0,2
-united kingdom,1.0,2
-uzbekistan,1.0,3
-suriname,1.0,1
-philippines,1.0,5
-papua new guinea,1.0,1
-romania,1.0,4
-luxembourg,1.0,2
-samoa,1.0,1
 bahamas,1.0,1
-nigeria,0.875,8
-lithuania,0.875,8
+bahrain,1.0,3
+estonia,1.0,3
+antarctica,1.0,1
+monaco,1.0,1
+tajikistan,1.0,1
+united kingdom,1.0,2
+western sahara,1.0,1
+kyrgyzstan,1.0,2
+nepal,1.0,1
+mauritania,1.0,1
+georgia,1.0,7
+papua new guinea,1.0,1
+belarus,1.0,1
+turkmenistan,1.0,1
+myanmar,1.0,2
+russian federation,1.0,1
+cyprus,1.0,4
+kazakhstan,1.0,3
+slovakia,1.0,2
+romania,1.0,4
+philippines,1.0,5
+thailand,1.0,3
+senegal,1.0,2
+luxembourg,1.0,2
+suriname,1.0,1
+hong kong,1.0,3
+mongolia,1.0,3
+greenland,1.0,2
+samoa,1.0,1
+new zealand,1.0,3
+mozambique,1.0,1
+uzbekistan,1.0,3
+guyana,1.0,1
+madagascar,1.0,2
 niger,0.875,8
+lithuania,0.875,8
+nigeria,0.875,8
 ecuador,0.8571428571428571,7
 singapore,0.8461538461538461,13
 iceland,0.8,5
@@ -46,20 +46,20 @@ indonesia,0.7586206896551724,29
 india,0.7534246575342466,73
 sweden,0.75,4
 south africa,0.7368421052631579,19
-malaysia,0.7142857142857143,7
 azerbaijan,0.7142857142857143,7
 spain,0.7142857142857143,14
+malaysia,0.7142857142857143,7
 japan,0.696969696969697,33
 el salvador,0.6666666666666666,3
-zimbabwe,0.6666666666666666,3
-ukraine,0.6666666666666666,9
-kenya,0.6666666666666666,9
 norway,0.6666666666666666,12
+kenya,0.6666666666666666,9
+ukraine,0.6666666666666666,9
+zimbabwe,0.6666666666666666,3
 australia,0.6470588235294118,17
 uruguay,0.625,8
 qatar,0.6190476190476191,21
-rwanda,0.6,5
 jersey,0.6,10
+rwanda,0.6,5
 guinea,0.6,5
 brazil,0.5945945945945946,37
 colombia,0.5882352941176471,17
@@ -69,16 +69,16 @@ haiti,0.5581395348837209,86
 egypt,0.5555555555555556,45
 mexico,0.55,40
 turkey,0.5135135135135135,37
-tunisia,0.5,6
-serbia,0.5,2
-ghana,0.5,4
-puerto rico,0.5,2
-mali,0.5,28
-switzerland,0.5,4
 slovenia,0.5,2
-cameroon,0.5,2
-jamaica,0.5,4
 croatia,0.5,2
+puerto rico,0.5,2
+jamaica,0.5,4
+ghana,0.5,4
+serbia,0.5,2
+switzerland,0.5,4
+cameroon,0.5,2
+tunisia,0.5,6
+mali,0.5,28
 cambodia,0.5,4
 oman,0.4827586206896552,87
 armenia,0.4666666666666667,15
@@ -89,58 +89,58 @@ greece,0.4444444444444444,9
 kuwait,0.4444444444444444,9
 united states,0.4409937888198758,161
 canada,0.4375,16
-chile,0.42857142857142855,14
 saudi arabia,0.42857142857142855,14
+chile,0.42857142857142855,14
 pakistan,0.42696629213483145,89
 jordan,0.4166666666666667,24
 honduras,0.4074074074074074,27
-panama,0.4,5
 lebanon,0.4,5
+panama,0.4,5
 iraq,0.38461538461538464,78
 italy,0.3636363636363637,11
 sudan,0.35714285714285715,14
 ireland,0.34375,32
+denmark,0.3333333333333333,3
+uganda,0.3333333333333333,6
+portugal,0.3333333333333333,3
+bangladesh,0.3333333333333333,6
 costa rica,0.3333333333333333,3
 albania,0.3333333333333333,3
-denmark,0.3333333333333333,3
-portugal,0.3333333333333333,3
 liberia,0.3333333333333333,6
-bangladesh,0.3333333333333333,6
-uganda,0.3333333333333333,6
 peru,0.2857142857142857,7
 netherlands,0.2857142857142857,7
 cuba,0.2727272727272727,22
 libya,0.2571428571428571,70
-latvia,0.25,4
 ethiopia,0.25,4
+latvia,0.25,4
 sri lanka,0.21428571428571427,14
-yemen,0.2,15
 algeria,0.2,5
+yemen,0.2,15
 belgium,0.16666666666666666,6
 austria,0.16666666666666666,6
 somalia,0.14285714285714285,7
 france,0.07407407407407407,27
 poland,0.07142857142857142,14
-gabon,0.0,1
-hungary,0.0,1
-paraguay,0.0,1
 sierra leone,0.0,1
 finland,0.0,2
-guam,0.0,1
-zambia,0.0,3
-nicaragua,0.0,1
-malawi,0.0,2
-burkina faso,0.0,1
-guatemala,0.0,3
-dominican republic,0.0,7
 lesotho,0.0,1
+guam,0.0,1
+malawi,0.0,2
+hungary,0.0,1
+dominican republic,0.0,7
+burkina faso,0.0,1
+nicaragua,0.0,1
+guatemala,0.0,3
 congo,0.0,7
-germany,-0.04166666666666666,24
+gabon,0.0,1
+zambia,0.0,3
+paraguay,0.0,1
+germany,-0.041666666666666664,24
 dominica,-0.125,8
 bermuda,-0.3333333333333333,3
 chad,-0.5,2
-maldives,-1.0,2
 south sudan,-1.0,1
+maldives,-1.0,2
+nauru,-1.0,1
 united arab emirates,-1.0,1
 malta,-1.0,1
-nauru,-1.0,1
