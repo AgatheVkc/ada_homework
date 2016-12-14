@@ -13494,7 +13494,7 @@ Jc4x/j+3iCm11OBgXQAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We got the desired tokenization of our data. We now have to remove all the stop words from the text.</p>
-<h3 id="b.-Stopwords-removal">b. Stopwords removal<a class="anchor-link" href="#b.-Stopwords-removal">&#182;</a></h3><p>In order to remove all the common words from our text, we load a <em>stopwords</em> dictionary, to which we'll add our custom stop words, especially considering : <em>fw</em>, <em>re</em>, <em>pm</em> and other things like that. This will be an iterative process, and what we will show below will be the dictionary resulting from this iterative process, with all the words we though should be filtered.</p>
+<h3 id="b.-Stopwords-removal">b. Stopwords removal<a class="anchor-link" href="#b.-Stopwords-removal">&#182;</a></h3><p>In order to remove all the common words from our text, we load a <em>stopwords</em> dictionary, to which we'll add our custom stop words, especially considering : <em>fw</em>, <em>re</em>, <em>pm</em> and other things like that. This will be an iterative process, and what we will show below will be the dictionary resulting from this iterative process, with all the words we thought should be filtered.</p>
 <p>Note that it is necessary to download the <em>stopwords</em> dictionaries in order to make them available.</p>
 
 </div>
@@ -16590,7 +16590,7 @@ dPBrmqaVGR38mqZpZUYHv6ZpWpnRwa9pmlZm/gd4z9SOeGD8sgAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, after posessing these dictionaries, we wanted to work directly with the<code>nltk</code> sentiment analysis methods, but their return types did not fit what we needed, we then chose to slightly rewrite their return types, in order to get what we needed. We rewrote the two main methods we're using, namely <code>demo_vader_instance</code> and <code>demo_liu_hu_lexicon</code>  The original code can be found on <a href="http://www.nltk.org/_modules/nltk/sentiment/util.html#demo_vader_instance">this</a> page. We will discuss a bit later on which one we used and the motivation of our choice.</p>
+<p>Now, after posessing these dictionaries, we wanted to work directly with the <code>nltk</code> sentiment analysis methods, but their return types did not fit what we needed, we then chose to slightly rewrite their return types, in order to get what we needed. We rewrote the two main methods we're using, namely <code>demo_vader_instance</code> and <code>demo_liu_hu_lexicon</code>.  The original code can be found on <a href="http://www.nltk.org/_modules/nltk/sentiment/util.html#demo_vader_instance">this</a> page. We will discuss a bit later on which one we used and the motivation of our choice.</p>
 
 </div>
 </div>
@@ -16690,7 +16690,7 @@ Vader Demo :	{&#39;neg&#39;: 0.112, &#39;pos&#39;: 0.224, &#39;neu&#39;: 0.665, 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We see that the classification is negative here, as the content of the email seems clearly negative. Note that we see here something that could be a problem for later on, in the fact that there are quite some spelling mistakes and abbreviations in the emails. Fixing this problem would require a way too large amount of time.</p>
+<p>We see that the classification is positive here, and it gives us an example of what output we have from Sentiment Analysis. Note that we don't see here something that could be a problem for later on, in the fact that there are in some emails quite some spelling mistakes and abbreviations. Fixing this problem would require a way too large amount of time.</p>
 <p>Then, in the next cell, we properly run sentiment analysis as well as finding the occurrence of every country in the emails. The <code>frequency</code> dictionary will store the frequency of each country, while the <code>pola</code> dict will store, the sum of the polarity (ranged from -1 to 1) for each email in which a given country appears.</p>
 <p>Note that we choose to use the Vader sentiment analyser as the Liu Hu one, which is often more precise, is also way slower, making the task nearly endless, even though there are only around 8000 email from which we extract the content. We ran both algorithms and will compare later on the results obtained from both algorithms.</p>
 <p>We also only work at the precision of a <strong>whole</strong> email. This may lead to imprecise polarity classification of an email. Indeed, imaging the content is extremely positive, except around the mention of a country, where it is very negative. The total would still be positive, even if the country is mentionned negatively. The improvement could be to split the email by sentences, then perform sentiment analysis on each of them, and see the result for the surroundings of the sentence in which a country is mentionned. This would not be simple to implement, and we did not take the time to do it. We then will probably end up, due to this issue, having much more <strong>positive rankings than negative ones</strong>.</p>
@@ -16884,7 +16884,7 @@ Vader Demo :	{&#39;neg&#39;: 0.112, &#39;pos&#39;: 0.224, &#39;neu&#39;: 0.665, 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We see already from displaying the head of <code>df_pola</code> that many countries appear only a very small number of times. Also, a lot of counrties are classified positively, due to the issue that we saw before. Let us focus on the countries that are mentionned negatively, i.e. that have a polarity smaller than 0.</p>
+<p>We see already from displaying the head of <code>df_pola</code> that many countries appear only a very small number of times. Also, a lot of countries are classified positively, due to the issue that we saw before. Let us focus on the countries that are mentionned negatively, i.e. that have a polarity smaller than 0.</p>
 
 </div>
 </div>
@@ -16979,7 +16979,7 @@ Vader Demo :	{&#39;neg&#39;: 0.112, &#39;pos&#39;: 0.224, &#39;neu&#39;: 0.665, 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We see that there are actually very few of them ! And that those mentionned negatively are not mentionned very frequently as well, in the exception of <em>Uganda</em> and <em>Serbia</em>. We will see below that the overwhelming majority of frequently mentionned countries are very positively mentionned, due to this bias of our algorithm.</p>
+<p>We see that there are actually very few of them ! And that those mentionned negatively are not mentionned very frequently as well, in the exception of <em>Germany</em>. We will see below that the overwhelming majority of frequently mentionned countries are very positively mentionned, due to this bias of our algorithm.</p>
 <p>Let us observe below the <strong>Frequency</strong> at which the countries are mentionned and the <strong>Polarity</strong> of those countries, both ranked. We only take countries that are mentionned more than 20 times, otherwise the plot would become overcrowded. Moreover, this <em>helps us filter some rare events</em> : we keep only the countries that are mentionned often, as the ones that are less mentionned are more likely to be wrongly classified, due to the inaccuracy of classification of our algorithm. It also makes sure that our result is an average from the result on several emails, and makes the result more reliable.</p>
 <p>Don't spend too much time looking at the <code>plot_color</code> function below, it simply does plot either <em>Polarity/Frequency</em> against the <em>Countries</em> with as a color map the <em>Frequency/Polarity</em> of the country.</p>
 
@@ -17900,7 +17900,7 @@ yEmSJEmSpCP5fwhGP6HckmQ1AAAAAElFTkSuQmCC
 </ul>
 <p>Nothing too suprising here, the United States are the country which is mostly talked about.</p>
 <p>And if we take on the polarity ranking, the most <em>positively</em> mentionned countries (that are mentionned also more than 20 times) are <em>Indonesia</em> and <em>India</em>. The United States are mentioned positively as well, but are only around the fifteenth position. The countries that are seen in the most neutral way (close to zero) are <em>France</em> and <em>Germany</em> (which is a bit seen negatively). Note also finally, that there are no countries mentionned very negatively due to this problem of considering the whole email instead of the direct context. Hence, the whole spectrum of values that we could have is not utilized. Note also that as both of those algorithms are quite simple, they do not take into account negations preceding a positive word and vice-versa. This is then quite a bias if there are a lot of negations in the sentence, which make our result not very reliable.</p>
-<p>There seems to be some significant differences between the countries mentionned positively and the country mentionned more neutrally. It does not seem to be linked to the frequency at which the countries appear, as <em>France</em>, which is neutral in Sentiment Analysis, is mentionned as often as qatar, which is considered very positively. There would hence seem to be some significant differences, as there is a large gap between how <em>Libya</em> is considered and how <em>France</em> and <em>Germany</em> are considered. However, due to the bias of the Sentiment Analysis and the simlpicity of the algorithm we're using, we cannot really draw conclusions from our results.</p>
+<p>There seems to be some significant differences between the countries mentionned positively and the country mentionned more neutrally. It does not seem to be linked to the frequency at which the countries appear, as <em>France</em>, which is neutral in Sentiment Analysis, is mentionned as often as <em>Qatar</em>, which is considered very positively. There would hence seem to be some significant differences, as there is a large gap between how <em>Libya</em> is considered and how <em>France</em> and <em>Germany</em> are considered. However, due to the bias of the Sentiment Analysis and the simlpicity of the algorithm we're using, we cannot really draw conclusions from our results.</p>
 <p>We also want to quickly comment on the country distribution we previously had, when considering the <em>Subject</em> of the email as well as the <em>Content</em> of it, against now only considering the <em>Content</em>. The country which was the most represented was then <strong>Haiti</strong>, which had near to <em>200</em> occurrences, followed by <em>Israel</em>, with roughly <em>190</em> occurrences. This shows that Haiti is probably mentionned in the title of mails, as well as Israel. It yields then different results to consider only the content of the email from the content and the title.</p>
 <p>Before moving on to the next topic, let us save the DataFrame for later reuse. We will then try to perform sentiment analysis with the other approach we've listed and see if we can obtain a more nuanced result, which exploits the whole spectrum of values.</p>
 
@@ -19154,7 +19154,7 @@ Considering 50 topics
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Below, there is an interactive visualisation of the similarity between the clusters, for 5,7,15 and 50 topics, to illustrate how they span the whole space of words, and how representative they are of it.</p>
+<p>Below, there is an interactive visualisation of the similarity between the clusters, for 5,6,7 and 50 topics, to illustrate how they span the whole space of words, and how representative they are of it.</p>
 
 </div>
 </div>
